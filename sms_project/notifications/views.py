@@ -6,7 +6,7 @@ from django.conf import settings
 
 
 @csrf_exempt
-def send_sms(request):
+def send_test_sms(request):
     if request.method != "POST":
         return JsonResponse({"error": "POST method required"}, status=405)
 
